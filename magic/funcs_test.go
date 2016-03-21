@@ -1,9 +1,6 @@
 package magic
 
-import (
-	"fmt"
-	"testing"
-)
+import "testing"
 
 func TestFuncSpell(t *testing.T) {
 	msg := "hello world"
@@ -18,5 +15,8 @@ func TestFuncSpell(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-	fmt.Println(rst)
+	first := rst.First().(string)
+	if first != msg {
+		t.Errorf("expecetd %s got %s", msg, first)
+	}
 }

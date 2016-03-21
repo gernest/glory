@@ -23,6 +23,10 @@ type Spell interface {
 
 type Result []interface{}
 
+func (r Result) First() interface{} {
+	return r[0]
+}
+
 func ToResult(src []reflect.Value) Result {
 	var v Result
 	for _, val := range src {
