@@ -43,7 +43,7 @@ func (f *FuncSpell) NumIn() int {
 }
 
 func (f *FuncSpell) NumOut() int {
-	return f.in
+	return f.out
 }
 
 func (f *FuncSpell) Conjure(a ...interface{}) (Result, error) {
