@@ -6,9 +6,9 @@ import (
 )
 
 func TestFuncSpell(t *testing.T) {
+	msg := "hello world"
 	hello := func() string {
-		fmt.Println("hello")
-		return "hello world"
+		return msg
 	}
 	h, err := NewFuncSpell(hello, "helo", "hello world")
 	if err != nil {
