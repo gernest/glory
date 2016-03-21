@@ -1,5 +1,7 @@
 # Glory
 
+__WARNING__: Don't touch this, I have just began working on it.
+
 Glory days are ahead of you, you shall reap the fruits of your web development
 like a boss.
 
